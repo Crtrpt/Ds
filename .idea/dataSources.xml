@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="DigitalStore_development@localhost" single-connection="true" uuid="54d696f7-f16d-4169-9cb6-eedc71276d71">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <rewrite-bounds>false</rewrite-bounds>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/DigitalStore_development</jdbc-url>
+    </data-source>
+  </component>
+</project>

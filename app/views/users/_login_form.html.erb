@@ -1,0 +1,32 @@
+<%= form_with(model: user, local: true,url: "/user/do_login" ) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <div class="input-group">
+    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+    <%= form.text_field :name,class:'form-control',placeholder:'用户名'%>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="input-group">
+    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+    <%=
+      form.text_field :password ,class:'form-control',placeholder:"密码"%>
+    </div>
+  </div>
+
+  <div class="form-group no-border margin-top-20">
+    <%= form.submit :"Login",class:'btn btn-success btn-block'%>
+  </div>
+<% end %>
